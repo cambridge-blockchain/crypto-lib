@@ -1,6 +1,6 @@
 {
   "name": "@cambridge-blockchain/crypto-lib",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The Cambridge Blockchain crypto library used for encryption/decryption of data and computation of attestations for the blockchain.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
