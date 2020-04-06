@@ -1,0 +1,37 @@
+{
+  "name": "@cambridge-blockchain/crypto-lib",
+  "version": "1.0.0",
+  "description": "The Cambridge Blockchain crypto library used for encryption/decryption of data and computation of attestations for the blockchain.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cambridge-blockchain/crypto-lib.git"
+  },
+  "keywords": [
+    "crypto"
+  ],
+  "author": "Cambridge Blockchain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cambridge-blockchain/crypto-lib/issues"
+  },
+  "homepage": "https://github.com/cambridge-blockchain/crypto-lib#readme",
+  "private": false,
+  "devDependencies": {
+    "prettier": "^2.0.4",
+    "tslint": "^6.1.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  }
+}
