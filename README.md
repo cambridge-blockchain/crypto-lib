@@ -14,3 +14,4 @@ The Cambridge Blockchain crypto library used for encryption/decryption of data a
 The following list outlines important changes.
 
 -   [IMPROVEMENT] Make the parameters in config.ts configurable by the caller
+-   [DOC] Add documentation that explains the functionality of this library
