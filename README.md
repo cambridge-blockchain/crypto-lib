@@ -13,5 +13,4 @@ The Cambridge Blockchain crypto library used for encryption/decryption of data a
 
 The following list outlines important changes.
 
--   [CRITICAL] Generate the IV randomly and return it from the calls
 -   [IMPROVEMENT] Make the parameters in config.ts configurable by the caller
