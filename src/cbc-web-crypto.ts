@@ -36,7 +36,6 @@ export class CBCWebCrypto {
     // the plaintext symmetric key (decrypted encSymKey).
     async encryptAttribute(attributeValue: ArrayBuffer, encSymKey: string): Promise<EncryptedData> {
         if (isEmpty(encSymKey)) {
-            console.log('[encryptAtribute] Skipping execution: encSymKey is not set!');
             return;
         }
         const keyPair = await this.keyPairPromise;
@@ -62,7 +61,6 @@ export class CBCWebCrypto {
     // and returns the plaintext attribute value. The attribute value is decrypted with the plaintext symmetric key (decrypted encSymKey)
     async decryptAttribute(encAttributeValue: ArrayBuffer, encSymKey: string, iv: Uint8Array): Promise<ArrayBuffer> {
         if (isEmpty(encSymKey)) {
-            console.log('[decryptAtribute] Skipping execution: encSymKey is not set!');
             return;
         }
         const keyPair = await this.keyPairPromise;
@@ -74,7 +72,7 @@ export class CBCWebCrypto {
             'decrypt',
         ]);
 
-        let aesConfig = Config.generateAESKeyFormat();
+        const aesConfig = Config.generateAESKeyFormat();
         aesConfig.iv = iv;
 
         return await this.subtleCrypto.decrypt(aesConfig, symKeyHandle, encAttributeValue);
@@ -129,7 +127,7 @@ export class CBCWebCrypto {
             ['verify'],
         );
 
-        let result = await this.subtleCrypto.verify('HMAC', key, signature, attributeValue);
+        const result = await this.subtleCrypto.verify('HMAC', key, signature, attributeValue);
         return result;
     }
 }
