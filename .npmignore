@@ -2,3 +2,9 @@ src
 tsconfig.json
 tslint.json
 .prettierrc
+.github
+/test/
+*.spec.js
+*.spec.js.map
+/*.tgz
+.editorconfig
