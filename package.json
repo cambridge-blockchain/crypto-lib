@@ -2,8 +2,8 @@
   "name": "@cambridge-blockchain/crypto-lib",
   "version": "2.0.0",
   "description": "The Cambridge Blockchain crypto library used for encryption/decryption of data and computation of attestations for the blockchain.",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "mocha --require ts-node/register test/*.spec.ts",
     "build": "tsc",
