@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.1.0]
+
+### Fixed
+
+-   Fixed missing files in published npm package
+
 ## [v2.0.0]
 
 #### Added
@@ -33,6 +39,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   README.md for quick start guide and documentation
 -   LICENSE with the MIT license under which the crypto library is released
 
-[unreleased]: https://github.com/cambridge-blockchain/crypto-lib/compare/v2.0.0...HEAD
+[unreleased]: https://github.com/cambridge-blockchain/crypto-lib/compare/v2.1.0...HEAD
+[v2.1.0]: https://github.com/cambridge-blockchain/crypto-lib/compare/v2.0.0...v2.1.0
 [v2.0.0]: https://github.com/cambridge-blockchain/crypto-lib/compare/v1.1.0...v2.0.0
 [v1.1.0]: https://github.com/cambridge-blockchain/crypto-lib/compare/0d5e3d201c0c123234e0fd6e5808d8a2354a1c15...v1.1.0
